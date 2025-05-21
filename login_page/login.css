@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Container for the login page */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  height: 100vh;
+}
+
+/* Login section */
+.login-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+/* Login box content */
+.login-box {
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+/* Input fields styling */
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: mediumblue;
+}
+
+/* Welcome section */
+.welcome-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+.welcome-box {
+  max-width: 400px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack sections vertically */
+  }
+  .login-section, .welcome-section {
+      width: 100%; /* Full-width sections on smaller screens */
+      height: 50vh; /* Make each section half of the viewport height */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 20px; /* Smaller heading on small screens */
+  }
+  input[type="text"], input[type="password"], button {
+      font-size: 14px; /* Adjust font size for input fields and button */
+  }
+  .welcome-box {
+      padding: 20px; /* Add padding for better text readability */
+  }
+  h2 {
+      font-size: 18px;
+  }
+  p {
+      font-size: 12px;
+  }
+}

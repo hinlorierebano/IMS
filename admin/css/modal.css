@@ -1,0 +1,66 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto; /* Centers the modal */
+    padding: 40px;
+    border: 2px solid blue;
+    width: 30%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Button styles */
+.btn-confirm, .btn-cancel {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-confirm {
+    background-color: navy;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: mediumblue;
+}
+
+.btn-cancel {
+    background-color: grey;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: lightslategrey;
+}
+
+.update-status {
+    margin-top: 10px;
+}
+
+label {
+    font-size: 14px;
+    color: #000000;
+}
+
+.status {
+    width: 50%;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 14px;
+}
